@@ -19,7 +19,7 @@ byte cycletime = 2;
 // Analog input info
 byte AnalogPin = A0;
 int Ai;
-byte Aithresh = 50;
+byte Aithresh = 20;
 
 // Output
 int sum;
@@ -112,6 +112,7 @@ void loop() {
     // LCD
     lcd.setCursor(11,0);
     lcd.print(round(Ao));
+    lcd.print("  ");
     lcd.setCursor(9, 1);
     lcd.print(V);
   }
